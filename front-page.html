@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DummyHambugerSite</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link href="./css/style.css" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="l-header">
-
+        <div class="l-header__contents">
+            <button class="c-button p-header__button js-hamburger">
+                <span>Menu</span>
+            </button>
+            <h1 class="p-header__logo">
+                <a href="front-page.html"><img src="images/pc_logo.svg" alt="Hamburger"></a>
+            </h1>
+            <form class="p-search">
+                <label class="p-search__text"></label>
+                <input class="p-search__imput" type="search" name="s" value="">
+                <input class="p-search__submit" type="submit" value="検索">
+            </form>
+        </div>    
     </header>
     <main class="l-main">
 

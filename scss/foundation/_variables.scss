@@ -1,0 +1,15 @@
+//Foundation
+//Variables
+
+$breakpoints: (
+    "pc": "screen and (min-width: 960px)",
+    "tablet": "screen and (max-width: 959px)",
+    "sp": "screen and (max-width: 428px)",
+);
+
+//Mixin
+@mixin breakpoint($key) {
+    @media #{map-get($breakpoints,$key)} {
+        @content;
+    }
+}
