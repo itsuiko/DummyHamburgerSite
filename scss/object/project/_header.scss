@@ -1,9 +1,15 @@
 //Object
 //Project
 
-@use "foundation/_variables"
 
 .p-header {
     height: 215px;
     width: auto;
+    position: relative;
+
+    &__button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
 }

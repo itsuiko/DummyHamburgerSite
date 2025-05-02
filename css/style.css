@@ -73,4 +73,47 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+body {
+  font-family: "Roboto", "M PLUS 1p", sans-serif;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.l-header {
+  max-width: 767px;
+  width: 100%;
+}
+
+.p-header {
+  height: 215px;
+  width: auto;
+  position: relative;
+}
+.p-header__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
 /*# sourceMappingURL=style.css.map */
