@@ -92,6 +92,8 @@ a {
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -101,19 +103,192 @@ img {
   display: block;
 }
 
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", "M PLUS 1p", sans-serif;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
 .l-header {
-  max-width: 767px;
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
+  height: 215px;
+  background-color: #FFF7EF;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .l-header {
+    height: 217px;
+  }
+}
+
+.c-button {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #707070;
+  display: flex;
+  border-style: none;
+}
+
+body {
+  font-family: "Roboto", "M PLUS 1p", sans-serif;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
 }
 
 .p-header {
-  height: 215px;
-  width: auto;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 960px) {
+  .p-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 2%;
+    width: 100%;
+  }
+}
+.p-header__logo {
+  font-family: "Roboto";
+  color: #707070;
+  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 43px;
+}
+@media screen and (min-width: 768px) {
+  .p-header__logo {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .p-header__logo {
+    font-size: 64px;
+    font-size: 4rem;
+    margin-top: 66px;
+    margin-bottom: 67px;
+  }
 }
 .p-header__button {
+  font-size: 20px;
+  font-size: 1.25rem;
+  margin-left: auto;
   position: absolute;
   top: 8px;
   right: 8px;
+}
+@media screen and (min-width: 768px) {
+  .p-header__button {
+    font-size: 34px;
+    font-size: 2.125rem;
+    top: 20px;
+    right: 25px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .p-header__button {
+    display: none;
+  }
+}
+.p-header__form {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 31px;
+  margin-right: 26px;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-header__form {
+    margin-top: 38px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 960px) {
+  .p-header__form {
+    margin-top: 86px;
+    margin-bottom: 85px;
+  }
+}
+.p-header__form .p-input {
+  width: 216px;
+  height: 46px;
+  margin-right: 12px;
+  border-radius: 10px 8px 10px 10px;
+  border: 1px solid #707070;
+  background-color: #FFF;
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  background-image: url(../../../images/mushimegane.svg);
+}
+@media screen and (min-width: 768px) {
+  .p-header__form .p-input {
+    width: 396px;
+    height: 46px;
+    background-position: 12px center;
+    margin-right: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,15 +1,95 @@
 //Object
 //Project
+@import "../../foundation/_base";
+@import "../../foundation/_variables";
+@import "../../foundation/_mixins";
 
 
 .p-header {
-    height: 215px;
-    width: auto;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media #{$pc} {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 4%;
+        padding-right: 2%;
+        width: 100%;
+    }
+
+    &__logo {
+        font-family: "Roboto";
+        color: $text1;
+        @include fontsize(40);
+        font-weight: 700;
+        margin-top: 43px;
+    
+
+        @media #{$tablet} {
+            margin-top: 40px;
+        }
+
+        @media #{$pc} {
+            @include fontsize(64);
+            margin-top: 66px;
+            margin-bottom: 67px;
+        }
+    }
 
     &__button {
+        @include fontsize(20);
+        margin-left: auto;
         position: absolute;
         top: 8px;
         right: 8px;
+
+        @media #{$tablet} {
+            @include fontsize(34);
+            top: 20px;
+            right: 25px;
+        }
+
+        @media #{$pc} {
+            display: none;
+        }
+    }
+
+    &__form {
+        display: flex;
+        margin-top: 40px;
+        margin-left: 31px;
+        margin-right: 26px;
+        padding: 0;
+
+        @media #{$tablet} {
+            margin-top: 38px;
+            align-items: center;
+        }
+
+        @media #{$pc} {
+            margin-top: 86px;
+            margin-bottom: 85px;
+        }
+
+        .p-input {
+            width: 216px;
+            height: 46px;
+            margin-right: 12px;
+            border-radius: 10px 8px  10px 10px;
+            border: 1px solid $text1;
+            background-color: $text2;
+            background-position: 5px center;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+            background-image: url(../../../images/mushimegane.svg);
+
+            @media #{$tablet} {
+                width: 396px;
+                height: 46px;
+                background-position: 12px center;
+                margin-right: 14px;
+            }
+        }
     }
 }

@@ -1,0 +1,9 @@
+//Foundation
+//Mixins
+
+$base-font-size: 16;
+
+@mixin fontsize($size) {
+    font-size: #{$size}px;
+    font-size: #{($size / $base-font-size)}rem;
+}
