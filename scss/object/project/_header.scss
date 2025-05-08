@@ -21,7 +21,7 @@
     &__logo {
         font-family: "Roboto";
         color: $text1;
-        @include fontsize(40);
+        @include font-size(40);
         font-weight: 700;
         margin-top: 43px;
     
@@ -31,21 +31,21 @@
         }
 
         @media #{$pc} {
-            @include fontsize(64);
+            @include font-size(64);
             margin-top: 66px;
             margin-bottom: 67px;
         }
     }
 
     &__button {
-        @include fontsize(20);
+        @include font-size(20);
         margin-left: auto;
         position: absolute;
         top: 8px;
         right: 8px;
 
         @media #{$tablet} {
-            @include fontsize(34);
+            @include font-size(34);
             top: 20px;
             right: 25px;
         }
@@ -76,7 +76,7 @@
             width: 216px;
             height: 46px;
             margin-right: 12px;
-            border-radius: 10px 8px  10px 10px;
+            border-radius: 10px;
             border: 1px solid $text1;
             background-color: $text2;
             background-position: 5px center;
@@ -89,6 +89,28 @@
                 height: 46px;
                 background-position: 12px center;
                 margin-right: 14px;
+            }
+        }
+
+        .p-button {
+            width: 90px;
+            height: 46px;
+            border-radius: 10px;
+            font-family: M+PLUS+1p;
+            font-weight: bold;
+            color: $text1;
+            background-color: $searchbutton;
+            border: 1px solid $text1;
+            @include font-size(16);
+
+            &:hover {
+                opacity: 0.6;
+                cursor: pointer;
+            }
+
+            @media #{$tablet} {
+                width: 136px;
+                height: 46px;
             }
         }
     }
