@@ -146,7 +146,7 @@ button {
   right: 0;
   width: 100%;
   height: 215px;
-  background-color: #F2EDE9;
+  background-color: #FFF7EF;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -271,7 +271,7 @@ button {
     margin-bottom: 85px;
   }
 }
-.p-header__form .p-input {
+.p-header__form .p-search {
   width: 216px;
   height: 46px;
   margin-right: 12px;
@@ -284,14 +284,14 @@ button {
   background-image: url(../../../images/mushimegane.svg);
 }
 @media screen and (min-width: 768px) {
-  .p-header__form .p-input {
+  .p-header__form .p-search {
     width: 396px;
     height: 46px;
     background-position: 12px center;
     margin-right: 14px;
   }
 }
-.p-header__form .p-button {
+.p-header__form .p-submit {
   width: 90px;
   height: 46px;
   border-radius: 10px;
@@ -303,12 +303,12 @@ button {
   font-size: 16px;
   font-size: 1rem;
 }
-.p-header__form .p-button:hover {
+.p-header__form .p-submit:hover {
   opacity: 0.6;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .p-header__form .p-button {
+  .p-header__form .p-submit {
     width: 136px;
     height: 46px;
   }
