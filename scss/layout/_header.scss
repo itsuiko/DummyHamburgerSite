@@ -1,8 +1,8 @@
 //Layout
 
-@use "../foundation/_base";
-@use "../foundation/_variables";
-@use "../foundation/_mixins";
+@import "../foundation/_base";
+@import "../foundation/_variables";
+@import "../foundation/_mixins";
 
 .l-header {
     position: fixed;
@@ -13,7 +13,7 @@
     background-color: $bglightorange;
     position: relative;
 
-    @media #{$tablet} {
+    @include breakpoint(tablet) {
         height: 217px;
     }
 }

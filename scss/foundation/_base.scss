@@ -1,7 +1,10 @@
 //Foundation
 //Base
 
+@import "./_variables";
+
 body {
+    background-color: $bglightorange;
     font-family: "Roboto", "M PLUS 1p", sans-serif;
     height: auto;
     overflow-y: auto;

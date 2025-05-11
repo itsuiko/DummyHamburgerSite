@@ -75,6 +75,7 @@ textarea:not([rows]) {
 }
 
 body {
+  background-color: #FFF7EF;
   font-family: "Roboto", "M PLUS 1p", sans-serif;
   height: auto;
   overflow-y: auto;
@@ -108,6 +109,7 @@ button {
 }
 
 body {
+  background-color: #FFF7EF;
   font-family: "Roboto", "M PLUS 1p", sans-serif;
   height: auto;
   overflow-y: auto;
@@ -149,7 +151,7 @@ button {
   background-color: #FFF7EF;
   position: relative;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .l-header {
     height: 217px;
   }
@@ -164,6 +166,7 @@ button {
 }
 
 body {
+  background-color: #FFF7EF;
   font-family: "Roboto", "M PLUS 1p", sans-serif;
   height: auto;
   overflow-y: auto;
@@ -201,7 +204,7 @@ button {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   .p-header {
     flex-direction: row;
     justify-content: space-between;
@@ -218,12 +221,12 @@ button {
   font-weight: 700;
   margin-top: 43px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .p-header__logo {
     margin-top: 40px;
   }
 }
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   .p-header__logo {
     font-size: 64px;
     font-size: 4rem;
@@ -239,7 +242,7 @@ button {
   top: 8px;
   right: 8px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .p-header__button {
     font-size: 34px;
     font-size: 2.125rem;
@@ -247,7 +250,7 @@ button {
     right: 25px;
   }
 }
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   .p-header__button {
     display: none;
   }
@@ -259,13 +262,13 @@ button {
   margin-right: 26px;
   padding: 0;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .p-header__form {
     margin-top: 38px;
     align-items: center;
   }
 }
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   .p-header__form {
     margin-top: 86px;
     margin-bottom: 85px;
@@ -283,7 +286,7 @@ button {
   padding-left: 40px;
   background-image: url(../../../images/mushimegane.svg);
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .p-header__form .p-search {
     width: 396px;
     height: 46px;
@@ -307,7 +310,7 @@ button {
   opacity: 0.6;
   cursor: pointer;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .p-header__form .p-submit {
     width: 136px;
     height: 46px;

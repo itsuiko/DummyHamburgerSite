@@ -7,3 +7,19 @@ $base-font-size: 16;
     font-size: #{$size}px;
     font-size: #{($size / $base-font-size)}rem;
 }
+
+//breakpoint
+
+@mixin breakpoint($point) {
+	@if $point==tablet {
+		@media (min-width: 768px) {
+			@content ;
+		}
+	}
+
+	@if $point==pc {
+		@media (min-width: 960px) {
+			@content ;
+		}
+	}
+}

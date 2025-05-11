@@ -1,7 +1,7 @@
 //Object
 //Project
-@import "../../foundation/_base";
 @import "../../foundation/_variables";
+@import "../../foundation/_base";
 @import "../../foundation/_mixins";
 
 
@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
 
-    @media #{$pc} {
+    @include breakpoint(pc) {
         flex-direction: row;
         justify-content: space-between;
         padding-left: 4%;
@@ -26,11 +26,11 @@
         margin-top: 43px;
     
 
-        @media #{$tablet} {
+        @include breakpoint(tablet) {
             margin-top: 40px;
         }
 
-        @media #{$pc} {
+        @include breakpoint(pc) {
             @include font-size(64);
             margin-top: 66px;
             margin-bottom: 67px;
@@ -44,13 +44,13 @@
         top: 8px;
         right: 8px;
 
-        @media #{$tablet} {
+        @include breakpoint(tablet) {
             @include font-size(34);
             top: 20px;
             right: 25px;
         }
 
-        @media #{$pc} {
+        @include breakpoint(pc) {
             display: none;
         }
     }
@@ -62,12 +62,12 @@
         margin-right: 26px;
         padding: 0;
 
-        @media #{$tablet} {
+        @include breakpoint(tablet) {
             margin-top: 38px;
             align-items: center;
         }
 
-        @media #{$pc} {
+        @include breakpoint(pc) {
             margin-top: 86px;
             margin-bottom: 85px;
         }
@@ -84,7 +84,7 @@
             padding-left: 40px;
             background-image: url(../../../images/mushimegane.svg);
 
-            @media #{$tablet} {
+            @include breakpoint(tablet) {
                 width: 396px;
                 height: 46px;
                 background-position: 12px center;
@@ -108,7 +108,7 @@
                 cursor: pointer;
             }
 
-            @media #{$tablet} {
+            @include breakpoint(tablet) {
                 width: 136px;
                 height: 46px;
             }
