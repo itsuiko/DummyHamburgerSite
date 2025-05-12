@@ -1,10 +1,12 @@
 //Object
 //Conponent
 
+@use "../global/" as g;
+
 .c-button {
     font-family: "Roboto";
     font-weight: 700;
-    color: $text1;
+    color: g.$text1;
     display: flex;
     border-style: none;
 }

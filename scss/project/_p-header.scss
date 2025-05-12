@@ -1,8 +1,8 @@
 //Object
 //Project
-@import "../../foundation/_variables";
-@import "../../foundation/_base";
-@import "../../foundation/_mixins";
+
+@use "../foundation/_base";
+@use "../global/" as g;
 
 
 .p-header {
@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
 
-    @include breakpoint(pc) {
+    @include g.breakpoint(pc) {
         flex-direction: row;
         justify-content: space-between;
         padding-left: 4%;
@@ -20,37 +20,37 @@
 
     &__logo {
         font-family: "Roboto";
-        color: $text1;
-        @include font-size(40);
+        color: g.$text1;
+        @include g.font-size(40);
         font-weight: 700;
         margin-top: 43px;
     
 
-        @include breakpoint(tablet) {
+        @include g.breakpoint(tablet) {
             margin-top: 40px;
         }
 
-        @include breakpoint(pc) {
-            @include font-size(64);
+        @include g.breakpoint(pc) {
+            @include g.font-size(64);
             margin-top: 66px;
             margin-bottom: 67px;
         }
     }
 
     &__button {
-        @include font-size(20);
+        @include g.font-size(20);
         margin-left: auto;
         position: absolute;
         top: 8px;
         right: 8px;
 
-        @include breakpoint(tablet) {
-            @include font-size(34);
+        @include g.breakpoint(tablet) {
+            @include g.font-size(34);
             top: 20px;
             right: 25px;
         }
 
-        @include breakpoint(pc) {
+        @include g.breakpoint(pc) {
             display: none;
         }
     }
@@ -62,12 +62,12 @@
         margin-right: 26px;
         padding: 0;
 
-        @include breakpoint(tablet) {
+        @include g.breakpoint(tablet) {
             margin-top: 38px;
             align-items: center;
         }
 
-        @include breakpoint(pc) {
+        @include g.breakpoint(pc) {
             margin-top: 86px;
             margin-bottom: 85px;
         }
@@ -77,14 +77,14 @@
             height: 46px;
             margin-right: 12px;
             border-radius: 10px;
-            border: 1px solid $text1;
-            background-color: $text2;
+            border: 1px solid g.$text1;
+            background-color: g.$text2;
             background-position: 5px center;
             background-repeat: no-repeat;
             padding-left: 40px;
             background-image: url(../../../images/mushimegane.svg);
 
-            @include breakpoint(tablet) {
+            @include g.breakpoint(tablet) {
                 width: 396px;
                 height: 46px;
                 background-position: 12px center;
@@ -96,19 +96,19 @@
             width: 90px;
             height: 46px;
             border-radius: 10px;
-            font-family: M+PLUS+1p;
+            font-family: "M+PLUS+1p";
             font-weight: bold;
-            color: $text1;
-            background-color: $searchbutton;
-            border: 1px solid $text1;
-            @include font-size(16);
+            color: g.$text1;
+            background-color: g.$searchbutton;
+            border: 1px solid g.$text1;
+            @include g.font-size(16);
 
             &:hover {
                 opacity: 0.6;
                 cursor: pointer;
             }
 
-            @include breakpoint(tablet) {
+            @include g.breakpoint(tablet) {
                 width: 136px;
                 height: 46px;
             }

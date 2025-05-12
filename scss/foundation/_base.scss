@@ -1,10 +1,10 @@
 //Foundation
 //Base
 
-@import "./_variables";
+@use "../global/" as g;
 
 body {
-    background-color: $bglightorange;
+    background-color: g.$bglightorange;
     font-family: "Roboto", "M PLUS 1p", sans-serif;
     height: auto;
     overflow-y: auto;
