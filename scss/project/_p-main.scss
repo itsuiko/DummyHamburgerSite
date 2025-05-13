@@ -1,0 +1,12 @@
+//project
+
+@use "../global/" as g;
+
+.p-main {
+    position: absolute;
+    top: 215px;
+
+    @include g.breakpoint(tablet) {
+        top: 217px;
+    }
+}

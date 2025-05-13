@@ -115,12 +115,15 @@ button {
   width: 100%;
   height: 215px;
   background-color: #FFF7EF;
-  position: relative;
 }
 @media (min-width: 768px) {
   .l-header {
     height: 217px;
   }
+}
+
+.l-main {
+  position: relative;
 }
 
 .c-button {
@@ -129,6 +132,50 @@ button {
   color: #707070;
   display: flex;
   border-style: none;
+}
+
+.c-form__search {
+  width: 216px;
+  height: 46px;
+  margin-right: 12px;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  background-color: #FFF;
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  background-image: url(../../../images/mushimegane.svg);
+}
+@media (min-width: 768px) {
+  .c-form__search {
+    width: 396px;
+    height: 46px;
+    background-position: 12px center;
+    margin-right: 14px;
+  }
+}
+
+.c-form__submit {
+  width: 90px;
+  height: 46px;
+  border-radius: 10px;
+  font-family: "M+PLUS+1p";
+  font-weight: bold;
+  color: #707070;
+  background-color: #DED8D3;
+  border: 1px solid #707070;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.c-form__submit:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .c-form__submit {
+    width: 136px;
+    height: 46px;
+  }
 }
 
 .p-header {
@@ -230,7 +277,7 @@ button {
   width: 90px;
   height: 46px;
   border-radius: 10px;
-  font-family: MPLUS1p;
+  font-family: "M+PLUS+1p";
   font-weight: bold;
   color: #707070;
   background-color: #DED8D3;
@@ -247,5 +294,20 @@ button {
     width: 136px;
     height: 46px;
   }
+}
+
+.p-main {
+  position: absolute;
+  top: 215px;
+}
+@media (min-width: 768px) {
+  .p-main {
+    top: 217px;
+  }
+}
+
+.p-mainvisual {
+  width: 100%;
+  height: 285px;
 }
 /*# sourceMappingURL=style.css.map */

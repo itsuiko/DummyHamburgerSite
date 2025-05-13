@@ -1,0 +1,45 @@
+//conponent
+
+@use "../global/" as g;
+
+.c-form__search {
+    width: 216px;
+    height: 46px;
+    margin-right: 12px;
+    border-radius: 10px;
+    border: 1px solid g.$text1;
+    background-color: g.$text2;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-image: url(../../../images/mushimegane.svg);
+
+    @include g.breakpoint(tablet) {
+        width: 396px;
+        height: 46px;
+        background-position: 12px center;
+        margin-right: 14px;
+    }
+}
+
+.c-form__submit {
+    width: 90px;
+    height: 46px;
+    border-radius: 10px;
+    font-family: "M+PLUS+1p";
+    font-weight: bold;
+    color: g.$text1;
+    background-color: g.$searchbutton;
+    border: 1px solid g.$text1;
+    @include g.font-size(16);
+
+    &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    @include g.breakpoint(tablet) {
+        width: 136px;
+        height: 46px;
+    }
+}
