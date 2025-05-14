@@ -24,8 +24,8 @@
         height: 46px;
         margin-right: 12px;
         border-radius: 10px;
-        border: 1px solid g.$text1;
-        background-color: g.$text2;
+        border: 1px solid g.$grey;
+        background-color: g.$white;
         background-position: 5px center;
         background-repeat: no-repeat;
         padding-left: 40px;
@@ -45,9 +45,9 @@
         border-radius: 10px;
         font-family: "M+PLUS+1p";
         font-weight: bold;
-        color: g.$text1;
+        color: g.$grey;
         background-color: g.$searchbutton;
-        border: 1px solid g.$text1;
+        border: 1px solid g.$grey;
         @include g.font-size(16);
 
          &:hover {

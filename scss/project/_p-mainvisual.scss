@@ -3,6 +3,34 @@
 @use "../global/" as g;
 
 .p-mainvisual {
+    position: relative;
     width: 100%;
     height: 285px;
+
+    @include g.breakpoint(pc) {
+        height: 530px;
+    }
+
+    &__img {
+        position: absolute;
+        background-image: url(../../images/main1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+
+        @include g.breakpoint(tablet) {
+            background-image: url(../../images/mainvisual-pc@2x.jpg);
+        }
+    }
+
+    &__title {
+        position: absolute;
+        @include g.font-family(MPlus1pFontBold);
+        @include g.font-size(36);
+        color: g.$white;
+        margin-top: 122px;
+        margin-left: 25px;
+    }
 }
