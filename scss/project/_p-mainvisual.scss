@@ -32,5 +32,14 @@
         color: g.$white;
         margin-top: 122px;
         margin-left: 25px;
+
+        @include g.breakpoint(tablet) {
+            margin-left: 86px;
+        }
+
+        @include g.breakpoint(pc) {
+            @include g.font-size(40);
+            margin-top: 234px;
+        }
     }
 }

@@ -4,6 +4,7 @@
 
 .p-main {
     position: absolute;
+    width: 100%;
     top: 215px;
 
     @include g.breakpoint(tablet) {

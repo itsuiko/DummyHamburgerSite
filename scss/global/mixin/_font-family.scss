@@ -2,6 +2,7 @@
 //mixin
 
 //"Roboto", "M PLUS 1p", sans-serif;
+//@use "../global/" as g;
 
 @mixin font-family($fontfamily) {
     @if $fontfamily==RobotoBold {

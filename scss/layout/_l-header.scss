@@ -9,6 +9,7 @@
     width: 100%;
     height: 215px;
     background-color: g.$bglightorange;
+    z-index: 1;
 
     @include g.breakpoint(tablet) {
         height: 217px;
