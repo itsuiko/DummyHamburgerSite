@@ -366,4 +366,50 @@ button {
   margin-top: 13px;
   margin-left: 15px;
 }
+@media (min-width: 768px) {
+  .p-contents .p-content__heading {
+    font-size: 44px;
+    font-size: 2.75rem;
+    margin-top: 14px;
+    margin-left: 11px;
+  }
+}
+@media (min-width: 960px) {
+  .p-contents .p-content__heading {
+    font-size: 80px;
+    font-size: 5rem;
+    margin-top: 24px;
+    margin-left: 10px;
+  }
+}
+.p-contents .p-content__heading::after {
+  position: absolute;
+  content: "";
+  top: 80px;
+  left: 15px;
+  height: 4px;
+  width: 34px;
+  background-color: #FFF;
+}
+@media (min-width: 768px) {
+  .p-contents .p-content__heading::after {
+    width: 36px;
+    top: 91px;
+  }
+}
+@media (min-width: 960px) {
+  .p-contents .p-content__heading::after {
+    width: 63px;
+    top: 160px;
+    left: 18px;
+  }
+}
+.p-contents .p-content__text-block {
+  margin-top: auto;
+}
+
+.p-textbox {
+  height: 156px;
+  width: 303px;
+}
 /*# sourceMappingURL=style.css.map */

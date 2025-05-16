@@ -54,6 +54,44 @@
             color: g.$textgrey;
             margin-top: 13px;
             margin-left: 15px;
+
+            @include g.breakpoint(tablet) {
+                @include g.font-size(44);
+                margin-top: 14px;
+                margin-left: 11px;
+            }
+
+            @include g.breakpoint(pc) {
+                @include g.font-size(80);
+                margin-top: 24px;
+                margin-left: 10px;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: 80px;
+                left: 15px;
+                height: 4px;
+                width: 34px;
+                background-color: g.$white;
+
+                @include g.breakpoint(tablet) {
+                    width: 36px;
+                    top: 91px;
+                }
+
+                @include g.breakpoint(pc) {
+                    width: 63px;
+                    top: 160px;
+                    left: 18px;
+                }
+            }
+
+        }
+
+        &__text-block {
+            margin-top: auto;
         }
     }
 
