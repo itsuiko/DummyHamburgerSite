@@ -140,7 +140,7 @@ button {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .p-header {
     flex-direction: row;
     justify-content: space-between;
@@ -163,7 +163,7 @@ button {
     margin-top: 40px;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .p-logo {
     font-size: 64px;
     font-size: 4rem;
@@ -185,7 +185,7 @@ button {
     align-items: center;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .p-form {
     margin-top: 86px;
     margin-bottom: 85px;
@@ -250,7 +250,7 @@ button {
     right: 25px;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .p-menubutton {
     display: none;
   }
@@ -272,7 +272,7 @@ button {
   width: 100%;
   height: 285px;
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .p-mainvisual {
     height: 530px;
   }
@@ -304,7 +304,7 @@ button {
     margin-left: 86px;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .p-mainvisual__title {
     font-size: 40px;
     font-size: 2.5rem;
@@ -328,7 +328,7 @@ button {
     gap: 41px;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .p-contents {
     padding: 120px;
     gap: 81px;
@@ -374,7 +374,7 @@ button {
     margin-left: 11px;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .p-contents .p-content__heading {
     font-size: 80px;
     font-size: 5rem;
@@ -397,7 +397,7 @@ button {
     top: 91px;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .p-contents .p-content__heading::after {
     width: 63px;
     top: 160px;
@@ -409,7 +409,33 @@ button {
 }
 
 .p-textbox {
-  height: 156px;
-  width: 303px;
+  height: 157px;
+  width: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 16px 16px 16px;
+  background-color: #FFF;
+  opacity: 0.7;
+  padding: 16px;
+  color: #3C2A10;
+}
+.p-textbox__title {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+@media (min-width: 768px) {
+  .p-textbox__title {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+.p-textbox__text {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 8px;
 }
 /*# sourceMappingURL=style.css.map */

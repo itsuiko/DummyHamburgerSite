@@ -1,7 +1,31 @@
 //project
 //textbox
 
+@use "../global/" as g;
+
 .p-textbox {
-    height: 156px;
-    width: 303px;
+    height: 157px;
+    width: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 16px 16px 16px;
+    background-color: g.$white;
+    opacity: 0.7;
+    padding: 16px;
+    color: g.$brown;
+
+    &__title {
+        @include g.font-family(MPlusBold);
+        @include g.font-size(22);
+        
+        @include g.breakpoint(tablet) {
+            @include g.font-size(24);
+        }
+    }
+
+    &__text {
+        @include g.font-family(MPlusRegular);
+        margin-top: 8px;
+
+    }
 }
