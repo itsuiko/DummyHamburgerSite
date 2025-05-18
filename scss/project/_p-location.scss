@@ -1,0 +1,68 @@
+//project
+//location
+
+@use "../global/" as g;
+
+.p-location {
+    position: relative;
+    height: 691px;
+
+    @include g.breakpoint(tablet) {
+        height: 415px;
+    }
+
+    @include g.breakpoint(pc) {
+        height: 649px;
+    }
+
+    &__map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    &__textbox {
+        position: relative;
+        height: auto;
+        min-height: 691px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom,
+                    rgba(0,0,0,0.55) 0%,
+                    rgba(0,0,0,0.55) 60%,
+                    rgba(0,0,0,0.3) 60%,
+                    rgba(0,0,0,0.3) 100%,);
+
+                }
+        @include g.breakpoint(tablet) {
+            min-height: 415px;
+
+            &::before {
+                content: '';
+                background: rgba(0,0,0,0.55);
+            }
+        }
+        
+        @include g.breakpoint(pc) {
+            min-height: 649px;
+
+            &::before {
+                content: '';
+                background: linear-gradient(to right,
+                    rgba(0,0,0,0.55) 0%,
+                    rgba(0,0,0,0.55) 60%,
+                    rgba(0,0,0,0.3) 60%,
+                    rgba(0,0,0,0.3) 100%,);
+            }
+        }
+    }
+}

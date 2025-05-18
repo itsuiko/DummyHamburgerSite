@@ -438,4 +438,59 @@ button {
   font-style: normal;
   margin-top: 8px;
 }
+
+.p-location {
+  position: relative;
+  height: 691px;
+}
+@media (min-width: 768px) {
+  .p-location {
+    height: 415px;
+  }
+}
+@media (min-width: 1024px) {
+  .p-location {
+    height: 649px;
+  }
+}
+.p-location__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.p-location__textbox {
+  position: relative;
+  height: auto;
+  min-height: 691px;
+}
+.p-location__textbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 60%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.3) 100%);
+}
+@media (min-width: 768px) {
+  .p-location__textbox {
+    min-height: 415px;
+  }
+  .p-location__textbox::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.55);
+  }
+}
+@media (min-width: 1024px) {
+  .p-location__textbox {
+    min-height: 649px;
+  }
+  .p-location__textbox::before {
+    content: "";
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 60%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.3) 100%);
+  }
+}
 /*# sourceMappingURL=style.css.map */
