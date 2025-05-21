@@ -61,8 +61,8 @@
                 content: '';
                 background: linear-gradient(to right,
                     rgba(0,0,0,0.55) 0%,
-                    rgba(0,0,0,0.55) 60%,
-                    rgba(0,0,0,0.3) 60%,
+                    rgba(0,0,0,0.55) 61%,
+                    rgba(0,0,0,0.3) 61%,
                     rgba(0,0,0,0.3) 100%,);
             }
         }
@@ -87,8 +87,12 @@
 
             @include g.breakpoint(pc) {
                 @include g.font-size(36);
+                margin-top: 86px;
+                margin-left: 119px;
 
                 &::after {
+                    position: absolute;
+                    content: '';
                     top: 80px;
                 }
             }
@@ -115,7 +119,8 @@
 
             @include g.breakpoint(pc) {
                 margin-top: 75px;
-                width: 697px;
+                margin-left: 119px;
+                width: 39%;
                 height: 326px;
             }
         }
