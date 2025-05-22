@@ -127,6 +127,12 @@ button {
   position: relative;
 }
 
+.l-footer {
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+
 .c-button {
   font-family: "Roboto";
   font-weight: 700;
@@ -411,10 +417,8 @@ button {
 }
 
 .p-textbox {
-  height: 157px;
+  height: auto;
   width: auto;
-  overflow-y: auto;
-  overflow-x: hidden;
   margin: 0 16px 16px 16px;
   background-color: #FFF;
   opacity: 0.7;

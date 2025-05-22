@@ -4,10 +4,8 @@
 @use "../global/" as g;
 
 .p-textbox {
-    height: 157px;
+    height: auto;
     width: auto;
-    overflow-y: auto;
-    overflow-x: hidden;
     margin: 0 16px 16px 16px;
     background-color: g.$white;
     opacity: 0.7;
