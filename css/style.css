@@ -27,7 +27,6 @@ ol[role=list] {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   line-height: 1.5;
 }
 
@@ -109,7 +108,6 @@ button {
 }
 
 .l-header {
-  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
@@ -128,9 +126,12 @@ button {
 }
 
 .l-footer {
-  height: 150px;
-  width: 100%;
-  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 
 .c-button {
@@ -265,7 +266,6 @@ button {
 .p-main {
   display: flex;
   flex-direction: column;
-  position: absolute;
   width: 100%;
   top: 215px;
 }

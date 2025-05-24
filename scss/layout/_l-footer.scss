@@ -1,7 +1,11 @@
 //layout
 
 .l-footer {
-    height: 150px;
-    width: 100%;
-    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
 }
