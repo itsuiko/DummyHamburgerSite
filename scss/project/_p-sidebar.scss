@@ -1,0 +1,36 @@
+//project
+
+@use "../global/" as g;
+
+.p-sidebar {
+    width: 100%;
+    position: relative;
+
+    &__btn {
+        position: absolute;
+        display: block;
+        width: 35px;
+        height: 35px;
+        top: 1px;
+        right: 1px;
+        font-size: 0;
+    }
+
+    &__btn::before, &__btn::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 35px;
+        background-color: g.$grey;
+    }
+
+    &__btn::before {
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+
+    &__btn::after {
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }    
+}
