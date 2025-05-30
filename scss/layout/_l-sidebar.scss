@@ -3,9 +3,9 @@
 @use "../global/" as g;
 
 .l-sidebar {
-    position: absolute;
+    //position: absolute;
     top: 0;
-    height: inherit;
+    height: 100%;
     width: 100%;
     background-color: g.$lightorange;
 }

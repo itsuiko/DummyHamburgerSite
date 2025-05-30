@@ -1,0 +1,9 @@
+//project
+
+@use "../global/" as g;
+
+.p-grid {
+    display: grid;
+    grid-template-rows: 215px 1fr 150px;
+    grid-template-columns: 1fr 328px;
+}

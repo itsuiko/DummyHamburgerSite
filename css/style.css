@@ -134,9 +134,8 @@ button {
 }
 
 .l-sidebar {
-  position: absolute;
   top: 0;
-  height: inherit;
+  height: 100%;
   width: 100%;
   background-color: #F2EDE9;
 }
@@ -151,6 +150,12 @@ button {
   color: #707070;
   display: flex;
   border-style: none;
+}
+
+.p-grid {
+  display: grid;
+  grid-template-rows: 215px 1fr 150px;
+  grid-template-columns: 1fr 328px;
 }
 
 .p-header {
