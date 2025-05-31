@@ -5,6 +5,7 @@
 
 
 .p-header {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +14,6 @@
         flex-direction: row;
         justify-content: space-between;
         padding-left: 4%;
-        padding-right: 2%;
         width: 100%;
     }
 }

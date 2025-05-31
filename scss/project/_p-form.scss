@@ -33,10 +33,12 @@
 
         @include g.breakpoint(tablet) {
             width: 396px;
+            max-width: 396px;
             height: 46px;
             background-position: 12px center;
             margin-right: 14px;
         }
+        
     }
 
     &__submit {
@@ -59,5 +61,6 @@
             width: 136px;
             height: 46px;
         }
+
     }
 }

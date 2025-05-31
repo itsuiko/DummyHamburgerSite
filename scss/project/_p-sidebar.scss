@@ -3,6 +3,44 @@
 @use "../global/" as g;
 
 .p-sidebar {
+    position: absolute;
+    width: 100%;
+    color: g.$grey;
+    
+    &__btn {
+        //position: absolute;
+        @include g.font-family(RobotoBold);
+        @include g.font-size(34);
+        margin: 84px 0 90px 46px;
+        cursor:default;
+
+    }
+    
+    &__nav {
+        margin: 0 0 0 46px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    &__heading {
+        @include g.font-family(MPlusBold);
+        @include g.font-size(24);
+        cursor: default;
+    }
+
+    &__menu {
+        @include g.font-family(MPlusRegular);
+        @include g.font-size(20);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 40px 0 0 20px;
+    }
+
+}
+
+.p-sidebar.is-active {
     //height: 100%;
     width: 100%;
     color: g.$grey;

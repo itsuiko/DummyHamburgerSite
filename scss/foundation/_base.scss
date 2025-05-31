@@ -3,12 +3,8 @@
 
 @use "../global/" as g;
 
-html {
-    height: max-content;
-}
 
 body {
-    height: max-content;
     background-color: g.$bglightorange;
     font-family: "Roboto", "M PLUS 1p", sans-serif;
     overflow-y: auto;

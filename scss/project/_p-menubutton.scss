@@ -8,6 +8,7 @@
         position: absolute;
         top: 8px;
         right: 8px;
+        background-color: inherit;
 
         @include g.breakpoint(tablet) {
             @include g.font-size(34);

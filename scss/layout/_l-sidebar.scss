@@ -4,8 +4,22 @@
 
 .l-sidebar {
     //position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
+    grid-row: 1/4;
+    grid-column: 1;
+    //top: 0;
+    //height: 100%;
+    //width: 100%;
     background-color: g.$lightorange;
+    z-index: 10;
+    transform: translateX(100%);
+
+    @include g.breakpoint(pc) {
+        transform: translateX(0);
+        grid-row: 1/3;
+        grid-column: 2;
+    }
+}
+
+.l-sidebar.js-sidebar {
+    transform: translateX(0);
 }
