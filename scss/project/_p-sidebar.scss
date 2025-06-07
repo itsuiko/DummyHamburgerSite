@@ -41,13 +41,12 @@
 }
 
 .p-sidebar.is-active {
-    //height: 100%;
     width: 100%;
     color: g.$grey;
     background-color: g.$lightorange;
     
 
-    &__btn {
+    .p-sidebar__btn {
         position: absolute;
         display: block;
         width: 35px;
@@ -55,9 +54,11 @@
         top: 1px;
         right: 1px;
         font-size: 0;
+        margin: 0;
+        cursor: pointer;
     }
 
-    &__btn::before, &__btn::after {
+    .p-sidebar__btn::before, .p-sidebar__btn::after {
         position: absolute;
         content: "";
         top: 50%;
@@ -67,27 +68,27 @@
         background-color: g.$grey;
     }
 
-    &__btn::before {
+    .p-sidebar__btn::before {
         transform: translate(-50%,-50%) rotate(45deg);
     }
 
-    &__btn::after {
+    .p-sidebar__btn::after {
         transform: translate(-50%,-50%) rotate(-45deg);
     }
     
-    &__nav {
+    .p-sidebar__nav {
         margin: 178px 0 0 46px;
         display: flex;
         flex-direction: column;
         gap: 60px;
     }
 
-    &__heading {
+    .p-sidebar__heading {
         @include g.font-family(MPlusBold);
         @include g.font-size(24);
     }
 
-    &__menu {
+    .p-sidebar__menu {
         @include g.font-family(MPlusRegular);
         @include g.font-size(20);
         display: flex;

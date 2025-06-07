@@ -139,6 +139,7 @@ button {
   background-color: #F2EDE9;
   z-index: 10;
   transform: translateX(100%);
+  transition: transform 0.5s;
 }
 @media (min-width: 1300px) {
   .l-sidebar {
@@ -148,8 +149,9 @@ button {
   }
 }
 
-.l-sidebar.js-sidebar {
+.l-sidebar.is-active {
   transform: translateX(0);
+  width: 328px;
 }
 
 .l-footer {
@@ -645,7 +647,7 @@ button {
   color: #707070;
   background-color: #F2EDE9;
 }
-.p-sidebar.is-active__btn {
+.p-sidebar.is-active .p-sidebar__btn {
   position: absolute;
   display: block;
   width: 35px;
@@ -653,8 +655,10 @@ button {
   top: 1px;
   right: 1px;
   font-size: 0;
+  margin: 0;
+  cursor: pointer;
 }
-.p-sidebar.is-active__btn::before, .p-sidebar.is-active__btn::after {
+.p-sidebar.is-active .p-sidebar__btn::before, .p-sidebar.is-active .p-sidebar__btn::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -663,26 +667,26 @@ button {
   height: 35px;
   background-color: #707070;
 }
-.p-sidebar.is-active__btn::before {
+.p-sidebar.is-active .p-sidebar__btn::before {
   transform: translate(-50%, -50%) rotate(45deg);
 }
-.p-sidebar.is-active__btn::after {
+.p-sidebar.is-active .p-sidebar__btn::after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-.p-sidebar.is-active__nav {
+.p-sidebar.is-active .p-sidebar__nav {
   margin: 178px 0 0 46px;
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-.p-sidebar.is-active__heading {
+.p-sidebar.is-active .p-sidebar__heading {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
   font-size: 1.5rem;
 }
-.p-sidebar.is-active__menu {
+.p-sidebar.is-active .p-sidebar__menu {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 400;
   font-style: normal;

@@ -12,6 +12,7 @@
     background-color: g.$lightorange;
     z-index: 10;
     transform: translateX(100%);
+    transition: transform 0.5s;
 
     @include g.breakpoint(pc) {
         transform: translateX(0);
@@ -20,6 +21,8 @@
     }
 }
 
-.l-sidebar.js-sidebar {
+.l-sidebar.is-active {
     transform: translateX(0);
+    width: 328px;
+    //background: rgba(0,0,0,0.4);
 }
