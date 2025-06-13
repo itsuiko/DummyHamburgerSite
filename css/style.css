@@ -134,12 +134,15 @@ button {
 }
 
 .l-sidebar {
+  position: relative;
+  right: 0;
+  margin-left: auto;
   opacity: 0;
   grid-row: 1/4;
-  grid-column: 2/3;
+  grid-column: 2/1;
   background-color: #F2EDE9;
-  z-index: 10;
-  transform: translateX(100%);
+  z-index: -10;
+  width: 328px;
   transition: transform 0.5s;
 }
 @media (min-width: 1300px) {
@@ -153,10 +156,9 @@ button {
 }
 
 .l-sidebar.is-active {
-  transform: translateX(0);
   opacity: 1;
-  width: 328px;
   display: block;
+  z-index: 10;
 }
 
 .l-footer {
