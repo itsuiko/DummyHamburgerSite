@@ -8,7 +8,6 @@
     color: g.$grey;
     
     &__btn {
-        //position: absolute;
         @include g.font-family(RobotoBold);
         @include g.font-size(34);
         margin: 84px 0 90px 46px;
