@@ -134,16 +134,22 @@ button {
 }
 
 .l-sidebar {
+  grid-row: 1/4;
+  grid-column: 2/1;
   position: relative;
   right: 0;
   margin-left: auto;
-  opacity: 0;
-  grid-row: 1/4;
-  grid-column: 2/1;
-  background-color: #F2EDE9;
   z-index: -10;
-  width: 328px;
-  transition: transform 0.5s;
+  opacity: 0;
+  transform: scale(1);
+  transition: z-index 0s 0.5s, opacity 0.5s ease-out, transform 0.5s ease-out;
+  width: 87%;
+  background-color: #F2EDE9;
+}
+@media (min-width: 768px) {
+  .l-sidebar {
+    width: 44%;
+  }
 }
 @media (min-width: 1300px) {
   .l-sidebar {
@@ -152,13 +158,16 @@ button {
     transform: translateX(0);
     grid-row: 1/3;
     grid-column: 2;
+    width: 100%;
   }
 }
 
 .l-sidebar.is-active {
-  opacity: 1;
-  display: block;
   z-index: 10;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  display: block;
 }
 
 .l-footer {
@@ -648,6 +657,14 @@ button {
   flex-direction: column;
   gap: 20px;
   margin: 40px 0 0 20px;
+}
+.p-sidebar__title {
+  opacity: 0;
+}
+@media (min-width: 1300px) {
+  .p-sidebar__title {
+    opacity: 1;
+  }
 }
 
 .p-sidebar.is-active {

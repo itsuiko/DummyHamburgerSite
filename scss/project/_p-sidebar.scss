@@ -38,6 +38,14 @@
         margin: 40px 0 0 20px;
     }
 
+    &__title {
+        opacity: 0;
+        
+        @include g.breakpoint(pc) {
+            opacity: 1;
+        }
+    }
+        
 }
 
 .p-sidebar.is-active {
