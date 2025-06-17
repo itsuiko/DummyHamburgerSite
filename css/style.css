@@ -356,6 +356,9 @@ button {
 }
 .p-mainvisual__title {
   position: absolute;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 36px;
   font-size: 2.25rem;
   color: #FFF;
@@ -372,6 +375,71 @@ button {
     font-size: 40px;
     font-size: 2.5rem;
     margin-top: 234px;
+  }
+}
+
+.p-mainvisual {
+  position: relative;
+  width: 100%;
+  height: 285px;
+}
+@media (min-width: 1300px) {
+  .p-mainvisual {
+    height: 239px;
+  }
+}
+.p-mainvisual__img--archive {
+  position: absolute;
+  background-image: url(../../images/archive-sp.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .p-mainvisual__img--archive {
+    background-image: url(../../images/page-title_arcive@2x.jpg);
+  }
+}
+.p-mainvisual__title--archive {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  font-size: 2.25rem;
+  color: #FFF;
+  margin-top: 106px;
+  margin-left: 37px;
+}
+@media (min-width: 768px) {
+  .p-mainvisual__title--archive {
+    margin-left: 86px;
+  }
+}
+@media (min-width: 1300px) {
+  .p-mainvisual__title--archive {
+    font-size: 40px;
+    font-size: 2.5rem;
+    margin-top: 234px;
+  }
+}
+.p-mainvisual__text--archive {
+  position: absolute;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #FFF;
+  margin-top: 160px;
+  margin-left: 37px;
+}
+@media (min-width: 768px) {
+  .p-mainvisual__text--archive {
+    margin-top: 130px;
+    margin-left: 275px;
   }
 }
 

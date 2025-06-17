@@ -27,7 +27,7 @@
 
     &__title {
         position: absolute;
-        @include g.font-family(MPlus1pFontBold);
+        @include g.font-family(MPlusBold);
         @include g.font-size(36);
         color: g.$white;
         margin-top: 122px;
@@ -40,6 +40,62 @@
         @include g.breakpoint(pc) {
             @include g.font-size(40);
             margin-top: 234px;
+        }
+    }
+}
+
+.p-mainvisual {
+    position: relative;
+    width: 100%;
+    height: 285px;
+
+    @include g.breakpoint(pc) {
+        height: 239px;
+    }
+
+    &__img--archive {
+        position: absolute;
+        background-image: url(../../images/archive-sp.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+
+        @include g.breakpoint(tablet) {
+            background-image: url(../../images/page-title_arcive@2x.jpg);
+        }
+    }
+
+    &__title--archive {
+        position: absolute;
+        @include g.font-family(RobotoBold);
+        @include g.font-size(36);
+        color: g.$white;
+        margin-top: 106px;
+        margin-left: 37px;
+
+        @include g.breakpoint(tablet) {
+            margin-left: 86px;
+        }
+
+        @include g.breakpoint(pc) {
+            @include g.font-size(40);
+            margin-top: 234px;
+        }
+    }
+
+    &__text--archive {
+        position: absolute;
+        @include g.font-family(MPlusBold);
+        @include g.font-size(16);
+        color: g.$white;
+        margin-top: 160px;
+        margin-left: 37px;
+
+        @include g.breakpoint(tablet) {
+            margin-top: 130px;
+            margin-left: 275px;
         }
     }
 }
