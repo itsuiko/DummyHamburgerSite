@@ -6,9 +6,5 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    top: 215px;
-
-    @include g.breakpoint(tablet) {
-        top: 217px;
-    }
+    
 }

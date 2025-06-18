@@ -322,12 +322,6 @@ button {
   display: flex;
   flex-direction: column;
   width: 100%;
-  top: 215px;
-}
-@media (min-width: 768px) {
-  .p-main {
-    top: 217px;
-  }
 }
 
 .p-mainvisual {
@@ -416,6 +410,7 @@ button {
 @media (min-width: 768px) {
   .p-mainvisual__text {
     flex-direction: row;
+    gap: 19px;
   }
 }
 .p-mainvisual__text--title {
@@ -432,13 +427,14 @@ button {
     font-size: 2.5rem;
   }
 }
-.p-mainvisual__text--name {
+.p-mainvisual__text--type {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
   font-size: 1rem;
   color: #FFF;
+  margin: auto 0;
 }
 
 .p-contents {

@@ -80,7 +80,7 @@
 
         @include g.breakpoint(tablet) {
             flex-direction: row;
-            
+            gap: 19px;
         }
 
         &--title {
@@ -95,11 +95,11 @@
 
         }
 
-        &--name {
+        &--type {
             @include g.font-family(MPlusBold);
             @include g.font-size(16);
             color: g.$white;
-        
+            margin:auto 0;
         }
     }    
 }
