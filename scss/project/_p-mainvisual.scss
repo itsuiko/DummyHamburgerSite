@@ -53,7 +53,7 @@
         height: 239px;
     }
 
-    &__img--archive {
+    &__archive--img {
         position: absolute;
         background-image: url(../../images/archive-sp.jpg);
         background-size: cover;
@@ -94,7 +94,7 @@
             }
 
         }
-
+        
         &--type {
             @include g.font-family(MPlusBold);
             @include g.font-size(16);

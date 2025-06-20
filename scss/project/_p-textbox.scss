@@ -10,15 +10,14 @@
     background-color: g.$white;
     opacity: 0.7;
     padding: 16px;
-    color: g.$brown;
 
     &__title {
         @include g.font-family(MPlusBold);
         @include g.font-size(22);
         
-        @include g.breakpoint(tablet) {
-            @include g.font-size(24);
-        }
+            @include g.breakpoint(tablet) {
+                @include g.font-size(24);
+            }
     }
 
     &__text {
@@ -26,4 +25,29 @@
         margin-top: 8px;
 
     }
+}
+
+.p-textbox__archive {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 22px 19px 22px;
+    padding: 0;
+    gap: 25px;
+
+        @include g.breakpoint(tablet) {
+            margin: 39px 42px;
+        }
+
+        @include g.breakpoint(pc) {
+            margin: 70px 100px;
+        }
+
+    &--title {
+        @include g.font-size(28);
+
+            @include g.breakpoint(tablet) {
+                @include g.font-size(36);
+            }
+    }
+
 }
