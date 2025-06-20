@@ -4,9 +4,6 @@
 @use "../global/" as g;
 
 .c-button {
-    font-family: "Roboto";
-    font-weight: 700;
     color: g.$grey;
-    display: flex;
     border-style: none;
 }
