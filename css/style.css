@@ -194,7 +194,7 @@ button {
   border-style: none;
 }
 
-.c-textbox {
+.c-textbox--brown {
   color: #3C2A10;
 }
 
@@ -604,6 +604,63 @@ button {
     font-size: 36px;
     font-size: 2.25rem;
   }
+}
+
+.p-card {
+  display: flex;
+  flex-direction: column;
+  padding: 19px;
+}
+.p-card__img {
+  width: 100%;
+}
+.p-card__textbox {
+  width: 100%;
+  background-color: #3C2B1C;
+  color: #FFF;
+  padding: 32px 17px 43px 17px;
+}
+.p-card__type {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.p-card__heading {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  font-size: 1rem;
+  position: relative;
+  margin-top: 21px;
+}
+.p-card__text {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 7px 1px 40px 1px;
+}
+.p-card__link {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 163px;
+  height: 42px;
+  background-color: #FFF;
+  color: #707070;
+  border-radius: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .p-location {
