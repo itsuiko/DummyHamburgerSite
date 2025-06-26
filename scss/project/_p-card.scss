@@ -68,7 +68,12 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        margin-top: 11%;
         
+            @include g.breakpoint(pc) {
+                width: 292px;
+                height: 76px;
+            }
     }
 
 
