@@ -682,6 +682,50 @@ button {
   }
 }
 
+.p-pagination {
+  align-items: center;
+  margin: 43px 20px 32px 20px;
+  color: #707070;
+}
+.p-pagination--mobile {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #707070;
+}
+@media (min-width: 768px) {
+  .p-pagination--mobile {
+    display: none;
+  }
+}
+.p-pagination--desktop {
+  display: none;
+  align-items: center;
+  gap: 0.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .p-pagination--desktop {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    color: #707070;
+  }
+}
+.p-pagination__page {
+  border: 1px solid #707070;
+  padding: 5px 10px;
+}
+
 .p-location {
   position: relative;
   height: 691px;
