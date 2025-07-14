@@ -40,4 +40,11 @@
         border: 1px solid g.$grey;
         padding: 5px 10px;
     }
+
+    &__page--1 {
+        border: 1px solid g.$grey;
+        background-color: g.$brown;
+        color: g.$white;
+
+    }
 }
