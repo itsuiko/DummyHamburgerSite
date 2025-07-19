@@ -838,9 +838,8 @@ button {
 }
 @media (min-width: 1300px) {
   .p-location__textbox-text {
-    margin-top: 75px;
-    margin-left: 119px;
-    width: 39%;
+    padding: 32px 0 75px 119px;
+    width: 45%;
   }
 }
 
