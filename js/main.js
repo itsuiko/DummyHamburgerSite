@@ -3,7 +3,7 @@
 
 const menu = document.querySelectorAll('.js-menu');
 const sidebar = document.querySelectorAll('.js-sidebar');
-const overlay = document.querySelector('.js-overlay');
+const overlay = document.querySelector('.p-overlay');
 
 menu.forEach(menuItem => {
     menuItem.addEventListener('click', () => {
@@ -15,6 +15,6 @@ menu.forEach(menuItem => {
 window.addEventListener('resize', () => {
     sidebar.forEach(sidebarItem => { 
         sidebarItem.classList.remove('is-active');
-
+    overlay.classList.remove('is-active');    
     });
 });

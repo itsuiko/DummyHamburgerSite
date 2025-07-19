@@ -1,7 +1,7 @@
 //Object
 //Conponent
 
-@use "../global/" as g;
+@use "../../global" as g;
 
 .c-text--brown {
     color: g.$brown;

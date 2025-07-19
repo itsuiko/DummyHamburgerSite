@@ -748,17 +748,6 @@ button {
 
 .p-location {
   position: relative;
-  height: 691px;
-}
-@media (min-width: 768px) {
-  .p-location {
-    height: 415px;
-  }
-}
-@media (min-width: 1300px) {
-  .p-location {
-    height: 649px;
-  }
 }
 .p-location__map {
   position: absolute;
@@ -769,9 +758,6 @@ button {
   z-index: 0;
 }
 .p-location__textbox {
-  position: absolute;
-  height: auto;
-  width: auto;
   min-height: 691px;
 }
 .p-location__textbox::before {
@@ -835,9 +821,6 @@ button {
   }
 }
 .p-location__textbox-text {
-  height: 518px;
-  overflow-y: auto;
-  overflow-x: hidden;
   position: relative;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 700;
@@ -845,15 +828,12 @@ button {
   font-size: 14px;
   font-size: 0.875rem;
   color: #FFF;
-  margin-top: 32px;
-  margin-left: 40px;
-  margin-right: 40px;
+  padding: 32px 40px 47px 40px;
   line-height: 2.5;
 }
 @media (min-width: 768px) {
   .p-location__textbox-text {
     margin-top: 35px;
-    height: 259px;
   }
 }
 @media (min-width: 1300px) {
@@ -861,7 +841,6 @@ button {
     margin-top: 75px;
     margin-left: 119px;
     width: 39%;
-    height: 326px;
   }
 }
 
@@ -1029,7 +1008,7 @@ button {
   }
 }
 
-.js-overlay {
+.p-overlay {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1040,7 +1019,7 @@ button {
   z-index: 5;
 }
 
-.js-overlay.is-active {
+.p-overlay.is-active {
   opacity: 1;
   pointer-events: auto;
 }

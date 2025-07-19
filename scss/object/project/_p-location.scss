@@ -1,20 +1,10 @@
 //project
 //location
 
-@use "../global/" as g;
+@use "../../global/" as g;
 
 .p-location {
     position: relative;
-    height: 691px;
-    
-
-    @include g.breakpoint(tablet) {
-        height: 415px;
-    }
-
-    @include g.breakpoint(pc) {
-        height: 649px;
-    }
 
     &__map {
         position: absolute;
@@ -26,9 +16,6 @@
     }
 
     &__textbox {
-        position: absolute;
-        height: auto;
-        width: auto;
         min-height: 691px;
 
         &::before {
@@ -100,28 +87,21 @@
         }
 
         &-text {
-            height: 518px;
-            overflow-y: auto;
-            overflow-x: hidden;
             position: relative;
             @include g.font-family(MPlusBold);
             @include  g.font-size(14);
             color: g.$white;
-            margin-top: 32px;
-            margin-left: 40px;
-            margin-right: 40px;
+            padding: 32px 40px 47px 40px;
             line-height: 2.5;
             
             @include g.breakpoint(tablet) {
                 margin-top: 35px;
-                height: 259px;
             }
 
             @include g.breakpoint(pc) {
                 margin-top: 75px;
                 margin-left: 119px;
                 width: 39%;
-                height: 326px;
             }
         }
     }

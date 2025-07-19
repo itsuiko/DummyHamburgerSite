@@ -1,6 +1,6 @@
 //scss.javascript
 
-.js-overlay {
+.p-overlay {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -11,7 +11,7 @@
     z-index: 5;
 }
 
-.js-overlay.is-active {
+.p-overlay.is-active {
     opacity: 1;
     pointer-events: auto;
 }
