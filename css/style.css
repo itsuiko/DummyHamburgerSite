@@ -454,6 +454,21 @@ button {
   margin: auto 0;
 }
 
+.p-mainvisual--single {
+  position: relative;
+  width: 100%;
+  height: 225px;
+}
+.p-mainvisual--single .p-mainvisual__img--single {
+  position: absolute;
+  background-image: url(../../images/single-top.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
 .p-contents {
   position: relative;
   display: flex;
