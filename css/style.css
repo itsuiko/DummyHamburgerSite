@@ -177,6 +177,17 @@ button {
   margin: 0;
 }
 
+.c-grid {
+  display: grid;
+  grid-template-rows: 215px 1fr 150px;
+  grid-template-columns: auto;
+}
+@media (min-width: 1300px) {
+  .c-grid {
+    grid-template-columns: 80% 20%;
+  }
+}
+
 .c-text--brown {
   color: #3C2A10;
 }
@@ -196,17 +207,6 @@ button {
 
 .c-textbox--brown {
   color: #3C2A10;
-}
-
-.p-grid {
-  display: grid;
-  grid-template-rows: 215px 1fr 150px;
-  grid-template-columns: auto;
-}
-@media (min-width: 1300px) {
-  .p-grid {
-    grid-template-columns: 80% 20%;
-  }
 }
 
 .p-header {
@@ -738,6 +738,7 @@ button {
 }
 .p-pagination__page {
   border: 1px solid #707070;
+  background-color: #FFF;
   padding: 5px 10px;
 }
 .p-pagination__page--1 {
