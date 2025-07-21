@@ -76,8 +76,6 @@ textarea:not([rows]) {
 body {
   background-color: #FFF7EF;
   font-family: "Roboto", "M PLUS 1p", sans-serif;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 li {
@@ -169,6 +167,8 @@ button {
   opacity: 1;
   z-index: 10;
   display: block;
+  overscroll-behavior-y: contain;
+  overflow-y: auto;
 }
 
 .l-footer {
