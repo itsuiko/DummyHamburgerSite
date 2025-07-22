@@ -210,6 +210,13 @@ button {
   color: #3C2A10;
 }
 
+.c-contents {
+  color: #3C2A10;
+}
+.c-contents__heading {
+  padding-bottom: 25px;
+}
+
 .p-header {
   position: relative;
   display: flex;
@@ -460,6 +467,11 @@ button {
   width: 100%;
   height: 225px;
 }
+@media (min-width: 768px) {
+  .p-mainvisual--single {
+    height: 500px;
+  }
+}
 .p-mainvisual--single .p-mainvisual__img--single {
   position: absolute;
   background-image: url(../../images/single-top.jpg);
@@ -468,6 +480,18 @@ button {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+}
+.p-mainvisual--single .p-mainvisual__heading--single {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  font-size: 2.25rem;
+  color: #FFF;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 7%;
 }
 
 .p-contents {
@@ -564,6 +588,10 @@ button {
 }
 .p-contents .p-content__text-block {
   margin-top: auto;
+}
+
+.p-contents--single {
+  padding: 34px 20px 69px 20px;
 }
 
 .p-textbox {
