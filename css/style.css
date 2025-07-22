@@ -904,7 +904,7 @@ button {
   height: 100vh;
   overflow-y: auto;
   overscroll-behavior-y: contain;
-  padding: 1rem;
+  padding-bottom: 5rem;
 }
 .p-sidebar.is-active .p-sidebar__btn {
   position: absolute;
