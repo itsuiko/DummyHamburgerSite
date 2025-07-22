@@ -9,7 +9,6 @@ menu.forEach(menuItem => {
     menuItem.addEventListener('click', () => {
         sidebar.forEach(sidebarItem => sidebarItem.classList.toggle('is-active'));
         overlay.classList.toggle('is-active');
-        
     });
 });
 

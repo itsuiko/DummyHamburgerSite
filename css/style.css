@@ -76,6 +76,8 @@ textarea:not([rows]) {
 body {
   background-color: #FFF7EF;
   font-family: "Roboto", "M PLUS 1p", sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 li {
@@ -167,8 +169,7 @@ button {
   opacity: 1;
   z-index: 10;
   display: block;
-  overscroll-behavior-y: contain;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .l-footer {
@@ -858,6 +859,11 @@ button {
   margin: 84px 0 90px 46px;
   cursor: default;
 }
+@media (min-width: 1300px) {
+  .p-sidebar__btn {
+    pointer-events: none;
+  }
+}
 .p-sidebar__nav {
   margin: 0 0 0 46px;
   display: flex;
@@ -895,6 +901,10 @@ button {
 .p-sidebar.is-active {
   color: #707070;
   background-color: #F2EDE9;
+  height: 100vh;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  padding: 1rem;
 }
 .p-sidebar.is-active .p-sidebar__btn {
   position: absolute;

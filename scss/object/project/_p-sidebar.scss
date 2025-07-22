@@ -13,6 +13,10 @@
         margin: 84px 0 90px 46px;
         cursor:default;
 
+        @include g.breakpoint(pc){
+            pointer-events: none;
+        }
+
     }
     
     &__nav {
@@ -50,6 +54,10 @@
 .p-sidebar.is-active {
     color: g.$grey;
     background-color: g.$lightorange;
+    height: 100vh;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    padding: 1rem;
     
 
     .p-sidebar__btn {
