@@ -5,8 +5,9 @@
 
 .c-contents {
     color: g.$brown;
-    
+
     &__heading {
-        padding-bottom: 25px;
+        @include g.font-family(MPlusBold);
+        
     }
 }

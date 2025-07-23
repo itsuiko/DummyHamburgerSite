@@ -214,7 +214,9 @@ button {
   color: #3C2A10;
 }
 .c-contents__heading {
-  padding-bottom: 25px;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .p-header {
@@ -593,6 +595,11 @@ button {
 .p-contents--single {
   padding: 34px 20px 69px 20px;
 }
+@media (min-width: 768px) {
+  .p-contents--single {
+    padding: 60px 60px 150px 60px;
+  }
+}
 
 .p-textbox {
   height: auto;
@@ -648,6 +655,13 @@ button {
     font-size: 36px;
     font-size: 2.25rem;
   }
+}
+
+.p-textbox--single {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 25px;
 }
 
 .p-card {
@@ -1060,5 +1074,18 @@ button {
 .p-overlay.is-active {
   opacity: 1;
   pointer-events: auto;
+}
+
+.p-blockquote {
+  background-color: #F5F5F5;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.p-blockquote__cite {
+  color: #0000ee;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
