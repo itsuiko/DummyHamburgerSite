@@ -105,34 +105,36 @@
 
     @include g.breakpoint(tablet) {
         padding: 60px 60px 150px 60px;
+        gap: 60px;
     }
 
     .p-contents__img--single {
         width: 100%;
         position: relative;
-        padding-bottom: 56.25%;
-        background-image: url(../../../images/cooked-foods-750073.jpg);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
     }
+
+        
 
     .p-contents__img2--single {
         width: 80%;
         margin: 0 auto;
-        min-height: 166px;
-        position: relative;
-        padding-bottom: 56.25%;
-        background-image: url(../../../images/cooked-foods2.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+
+        @include g.breakpoint(tablet) {
+            width: auto;
+        }
     }
 
     .p-contents__imgbox {
-        display: flex;
-        flex-direction: column;
+        display: grid;
         gap: 20px;
+
+        @include g.breakpoint(tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include g.breakpoint(pc) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 
     .p-contents__list-container {
@@ -161,9 +163,44 @@
     .p-contents__table {
         border-collapse: collapse;
         border: 1px solid #000;
+        text-align: left;
+
+        .p-contents__tr {
+            
+        }
+
+        .p-contents__th {
+            border: 1px solid #000;
+            @include g.font-family(MPlusRegular);
+            padding: 30px 0 30px 30px;
+        }
 
         .p-contents__td {
             border: 1px solid #000;
+            padding: 30px 0 30px 30px;
+            width: 58%;
+
+            @include g.breakpoint(tablet) {
+                width: 69%;
+            }
         }
+    }
+
+    .p-contents__btn {
+        height: 81px;
+        @include g.font-family(MPlusBold);
+        border: 1px solid g.$grey;
+        background-image: linear-gradient(to right, g.$lightorange, g.$searchbutton);
+        border-radius: 20px;
+        margin-top: 30px;
+
+        @include g.breakpoint(tablet) {
+            width: 51%;
+            height: 104px;
+        }
+    }
+
+    .p-contents__text {
+        @include g.font-family(MPlusBold);
     }
 }

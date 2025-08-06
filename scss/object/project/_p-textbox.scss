@@ -56,4 +56,8 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    @include g.breakpoint(tablet) {
+        gap: 55px;
+    }
 }
