@@ -104,7 +104,7 @@
     }    
 }
 
-.p-mainvisual--single {
+.p-mainvisual--singlepage {
     position: relative;
     width: 100%;
     height: 225px;
@@ -115,7 +115,7 @@
 
     .p-mainvisual__img--single {
         position: absolute;
-        background-image: url(../../images/single-top.jpg);
+        background-image: url(../../../images/single-top.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -133,7 +133,7 @@
         height: 100%;
     }    
 
-    .p-mainvisual__heading--single {
+    .p-mainvisual__heading--singlepage {
         @include g.font-family(MPlusBold);
         @include g.font-size(36);
         color: g.$white;

@@ -97,7 +97,7 @@
 
 }
 
-.p-contents--single {
+.p-contents--singlepage {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -108,14 +108,14 @@
         gap: 60px;
     }
 
-    .p-contents__img--single {
+    .p-contents__img--singlepage {
         width: 100%;
         position: relative;
     }
 
         
 
-    .p-contents__img2--single {
+    .p-contents__img2--singlepage {
         width: 80%;
         margin: 0 auto;
 
