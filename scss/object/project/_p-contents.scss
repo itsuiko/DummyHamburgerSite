@@ -98,9 +98,72 @@
 }
 
 .p-contents--single {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     padding: 34px 20px 69px 20px;
 
     @include g.breakpoint(tablet) {
         padding: 60px 60px 150px 60px;
+    }
+
+    .p-contents__img--single {
+        width: 100%;
+        position: relative;
+        padding-bottom: 56.25%;
+        background-image: url(../../../images/cooked-foods-750073.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .p-contents__img2--single {
+        width: 80%;
+        margin: 0 auto;
+        min-height: 166px;
+        position: relative;
+        padding-bottom: 56.25%;
+        background-image: url(../../../images/cooked-foods2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .p-contents__imgbox {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .p-contents__list-container {
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+        @include g.font-family(MPlusRegular);
+
+        .p-contents__list-box {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 17px;
+        }
+
+        .p-contents__list:nth-child(2) {
+            margin-left: 18px;
+        }
+    }
+
+    .p-contents__code-box {
+        background-color: g.$lightgrey;
+        @include g.font-family(MPlusRegular);
+        padding: 50px 0 50px 50px;
+    }
+
+    .p-contents__table {
+        border-collapse: collapse;
+        border: 1px solid #000;
+
+        .p-contents__td {
+            border: 1px solid #000;
+        }
     }
 }

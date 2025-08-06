@@ -593,12 +593,70 @@ button {
 }
 
 .p-contents--single {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   padding: 34px 20px 69px 20px;
 }
 @media (min-width: 768px) {
   .p-contents--single {
     padding: 60px 60px 150px 60px;
   }
+}
+.p-contents--single .p-contents__img--single {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  background-image: url(../../../images/cooked-foods-750073.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.p-contents--single .p-contents__img2--single {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 166px;
+  position: relative;
+  padding-bottom: 56.25%;
+  background-image: url(../../../images/cooked-foods2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.p-contents--single .p-contents__imgbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.p-contents--single .p-contents__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.p-contents--single .p-contents__list-container .p-contents__list-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 17px;
+}
+.p-contents--single .p-contents__list-container .p-contents__list:nth-child(2) {
+  margin-left: 18px;
+}
+.p-contents--single .p-contents__code-box {
+  background-color: #F5F5F5;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 50px 0 50px 50px;
+}
+.p-contents--single .p-contents__table {
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+.p-contents--single .p-contents__table .p-contents__td {
+  border: 1px solid #000;
 }
 
 .p-textbox {
@@ -661,7 +719,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-bottom: 25px;
 }
 
 .p-card {
@@ -738,6 +795,36 @@ button {
     width: 292px;
     height: 76px;
   }
+}
+
+.p-card--single {
+  display: grid;
+  grid-template-columns: 46% 54%;
+  gap: 10px;
+}
+.p-card--single .p-card__img--single {
+  min-height: 90px;
+}
+.p-card--single .p-card__text--single {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.p-card--single2 {
+  display: grid;
+  grid-template-columns: 46% 54%;
+  gap: 10px;
+}
+.p-card--single2 .p-card__img--single {
+  min-height: 90px;
+  grid-column: 2/3;
+}
+.p-card--single2 .p-card__text--single {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  grid-row: 1/2;
 }
 
 .p-pagination {
@@ -1079,7 +1166,6 @@ button {
 .p-blockquote {
   background-color: #F5F5F5;
   padding: 30px 20px;
-  margin-bottom: 30px;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 400;
   font-style: normal;

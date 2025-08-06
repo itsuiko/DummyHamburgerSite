@@ -6,7 +6,6 @@
 .p-blockquote {
     background-color: g.$lightgrey;
     padding: 30px 20px;
-    margin-bottom: 30px;
     @include g.font-family(MPlusRegular);
 
     &__cite {

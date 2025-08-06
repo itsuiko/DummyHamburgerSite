@@ -78,3 +78,33 @@
 
 
 }
+
+.p-card--single {
+    display: grid;
+    grid-template-columns: 46% 54%;
+    gap: 10px;
+
+    .p-card__img--single {
+        min-height: 90px
+    }
+
+    .p-card__text--single {
+        @include g.font-family(MPlusRegular);
+    }
+}
+
+.p-card--single2 {
+    display: grid;
+    grid-template-columns: 46% 54%;
+    gap: 10px;
+
+    .p-card__img--single {
+        min-height: 90px;
+        grid-column: 2/3
+    }
+
+    .p-card__text--single {
+        @include g.font-family(MPlusRegular);
+        grid-row: 1/2;
+    }
+}
