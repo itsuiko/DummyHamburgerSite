@@ -1032,6 +1032,15 @@ button {
   width: 100%;
   color: #707070;
 }
+@media (min-width: 1300px) {
+  .p-sidebar {
+    position: static;
+    width: auto;
+    padding-bottom: 5rem;
+    height: auto;
+    overflow: visible;
+  }
+}
 .p-sidebar__btn {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
